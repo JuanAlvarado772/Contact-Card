@@ -1,0 +1,125 @@
+* { 
+  box-sizing: border-box;
+}
+html, body { 
+  height: 100%; 
+  margin: 0; 
+  font-family: 'Poppins', sans-serif; 
+  font-size: 62.5%; 
+}
+
+html, body { min-height: 100dvh; overflow-x: hidden; }
+
+@media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+}
+@media (max-width: 61.25em) {
+  html {
+    font-size: 58%;
+  }
+}
+@media (max-width: 28.75em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+body {
+  position: relative;
+  background: url("./assets/images/backiee-314916-landscape.jpg");
+  background-size: cover;
+  background-position: center center; 
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+body::after {
+  content: "";
+  position: absolute;
+  inset: 0; 
+  background: inherit; 
+  background-size: inherit;
+  background-position: inherit;
+  background-repeat: inherit;
+  filter: blur(5px);   
+  transform: scale(1.1); 
+  z-index: -1; 
+}
+
+a {
+    color:#fffbd5;
+    text-decoration: none;
+
+}
+
+.card {
+    height: auto;
+    max-width: 75vw;
+    padding: 25px 50px;
+    background: linear-gradient(135deg, #355c7d, #6c5b7b, #c06c84);
+    color: #fffbd5;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.card div {
+    display: block; 
+    width: clamp(180px, 40vw, 250px);        
+    padding: 10px;
+    margin-top: 10px; 
+    background: #3C3B3F;
+    font-size: 1.5rem;
+    white-space: normal;          
+    overflow-wrap: anywhere;     
+    word-break: break-word;       
+    hyphens: auto; 
+    border-radius: 5px;
+}
+
+.card div:hover{
+    background:#ACB6E5;
+    color: #1a2a6c;
+}
+
+.card div:active {
+  transform: scale(0.92);    
+  background: #222;
+  color: #fffbd5;          
+}
+
+.attribution {
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 70px;
+
+}
+
+h1 {
+    font-size: 1.7rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+    color: #fffbd5;
+    font-weight: bold;
+}
+
+
+p {
+    font-size: 1.3rem;
+}
